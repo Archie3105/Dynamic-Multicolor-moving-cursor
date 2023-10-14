@@ -9,10 +9,10 @@ html {
   width: 100%;
   height: 100%;
   color: #8e44ad;
-  background-image: url("https://r4.wallpaperflare.com/wallpaper/719/114/325/anime-naruto-itachi-uchiha-wallpaper-79b0d83d515a7d6b16f7a8efd0c1763d.jpg");
+  /* background-image: url("https://r4.wallpaperflare.com/wallpaper/719/114/325/anime-naruto-itachi-uchiha-wallpaper-79b0d83d515a7d6b16f7a8efd0c1763d.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 #main {
   width: 100%;
@@ -21,13 +21,51 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* position: relative; */
 }
-/* 
-  body img(
-    
-  ) */
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 20px 28px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img {
+  width: 70px;
+  cursor: pointer;
+}
+nav ul li {
+  display: inline-block;
+  /* padding: 10px 0px; */
+  margin-right: 40px;
+  transition: all ease 0.5s;
+  font-size: 1.1em;
+}
+nav ul li {
+  transform: scale(0.9);
+}
+nav ul a {
+  
+  text-decoration: none;
+  color: rgb(185, 17, 17);
+  font-size: 1em;
+  font-weight: 600;
+  /* margin: 5px px; */
+  padding: 8px 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+nav ul a:hover {
+  color: #fff;
+  background-color: rgb(97, 3, 3);
+  transform: scale(1.3);
+}
 h1 {
-  font-size: 8em;
+  font-size: 6em;
   font-weight: 900;
   background-image: linear-gradient(
     43deg,
@@ -37,9 +75,16 @@ h1 {
   );
   -webkit-background-clip: text;
   color: transparent;
+  transition: 0.7s;
 }
-h2{ 
-    background-image: linear-gradient(
+h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+span {
+  font-size: 0.5em;
+  font-weight: 600;
+  background-image: linear-gradient(
     43deg,
     #4158d0 0%,
     #c850c0 46%,
